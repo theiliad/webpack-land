@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://github.com/preciousDev" target="_blank">
           <img src="/assets/img/precious_dev.png" width="25" style="float: left; margin-right: 10px; margin-top: -2px; opacity: 0.7;" />
           Precious Dev
         </a>
@@ -18,13 +18,17 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Add Plugin</a></li>
+          <li>
+            <a href="https://github.com/theiliad/webpack-land/blob/master/src/app/plugins.json" style="padding-right: 0; padding-left: 0;">
+              <span style="margin-right: 7.5px;">🙏</span>Add Plugin
+            </a>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="container center-text" id="header-hero" (click)="searchTerm = ''">
+  <div class="container center-text" id="header-hero" (click)="searchTerm = ''; filter.tag = '';">
     <a href="#" (click)="$event.preventDefault();">
       <h1>Webpack.land 💯</h1>
       <h2>A repository of great webpack plugins</h2>
@@ -36,11 +40,15 @@
   <div class="form-group row">
     <div class="inner-addon left-addon">
         <i class="icon ion-ios-search"></i>
-        <input type="text" class="form-control" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="search();">
+        <input type="text" class="form-control" [placeholder]="filter.tag ? ('Search in ' + filter.category) : 'Search...'" [(ngModel)]="searchTerm" (ngModelChange)="search();">
     </div>
   </div>
 
-  <div class="row" *ngIf="searchTerm && searchTerm.length > 0">
+  <div class="row" *ngIf="(searchTerm && searchTerm.length > 0) || filter.tag">
+    <a href="#" class="link-row" (click)="$event.preventDefault(); searchTerm = ''; filter.tag = '';">
+      <i class="icon ion-md-arrow-round-back"></i>
+    </a>
+
     <a [href]="plugin.url" target="_blank" class="link-row" *ngFor="let plugin of filteredPlugins;">
       <strong>{{plugin.name}}</strong>
       
@@ -48,9 +56,9 @@
     </a>
   </div>
 
-  <div class="row center-text" *ngIf="searchTerm === undefined || searchTerm.length === 0">
-    <a href="#" *ngFor="let category of categories;">
-      <div class="block col-md-3 col-sm-6">
+  <div class="row center-text" *ngIf="(searchTerm === undefined || searchTerm.length === 0) && (filter.tag === undefined || filter.tag.length === 0)">
+    <a href="#" *ngFor="let category of categories;" (click)="filterByCat($event, {category: category.title, tag: category.tag});">
+      <div class="block col-md-3 col-sm-6 col-xs-6">
         <div class="block-content">
             {{category.title}}
         </div>
@@ -62,5 +70,11 @@
 <div id="footer" class="center-text">
   <a href="https://cycle.io" target="_blank">
       Proudly Hosted on <img src="/assets/img/cycle.svg" />
+  </a>
+
+  <br />
+
+  <a href="http://postcss.parts" target="_blank" style="display: block; margin-top: 15px;">
+      <b>Inspiration</b> - PostCSS.parts 🔥
   </a>
 </div>

@@ -133,7 +133,7 @@
       "name":"stylus-loader",
       "author":"shama",
       "url":"https://github.com/shama/stylus-loader",
-      "description":":art: A stylus loader for webpack.",
+      "description":"🎨 A stylus loader for webpack.",
       "stars":248,
       "tags":[
          "styles"

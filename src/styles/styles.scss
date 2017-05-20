@@ -10,8 +10,14 @@ body {
 }
 
 /* === 1. General Styles === */
-a:hover {
-    color: $primary_color !important;
+a {
+    &:hover {
+        color: $primary_color;
+    }
+    
+    &:focus {
+        text-decoration: none !important;
+    }
 }
 
 /* === 2. General re-usable styles === */
@@ -36,12 +42,20 @@ div {
             margin-top:  0;
             font-size:   65px;
             font-weight: 700;
+
+            @media (max-width: 671px) {
+                font-size: 35px;
+            }
         }
 
         h2 {
             margin-top:     7px;
             margin-bottom:  45px;
             font-size:      25px;
+
+            @media (max-width: 671px) {
+                font-size: 19px;
+            }
         }
     }
 }

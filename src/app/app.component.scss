@@ -4,11 +4,13 @@
 div {
     &#header-hero {
         a {
+            display: table;
+            margin: auto;
             text-decoration: none;
             color: #000;
 
             &:hover {
-                color: #000 !important;
+                color: #000;
             }
         }
     }
@@ -52,11 +54,19 @@ div {
                 strong {
                     font-size: 30px;
                     font-weight: 700;
+
+                    @media (max-width: 730px) {
+                        font-size: 20px;
+                    }
                 }
 
                 span {
                     font-size: 19px;
                     margin-left: 15px;
+
+                    @media (max-width: 730px) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -90,6 +100,10 @@ div {
                     @include transform(scale(1.025));
                     z-index: 10;
                     transition: all .15s;
+
+                    @media (max-width: 777px) {
+                        @include transform(scale(1));
+                    }
                 }
             }
 
@@ -100,9 +114,18 @@ div {
                 @include transform(translate(-50%, -50%));
                 font-size: 27px;
                 font-weight: 700;
+
+                @media (max-width: 635px) {
+                    font-size: 21px;
+                }
             }
         }
     }
+}
+
+i.icon {
+    font-size: 23px;
+    vertical-align: middle;
 }
 
 /* enable absolute positioning */

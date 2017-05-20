@@ -22,15 +22,31 @@ export class AppComponent {
   pluginsList     = require('./plugins.json');
   filteredPlugins = this.pluginsList;
 
-  searchTerm: string;
+  searchTerm : string;
+  filter     = {
+    category: undefined,
+    tag:      undefined
+  };
 
   constructor() {}
 
   search() {
-    console.log(this.searchTerm);
+    if (this.filter.tag) {
+      this.filteredPlugins = this.pluginsList.filter(tag => {
+          return tag.tags.indexOf(this.filter.tag) >= 0 && ((this.searchTerm && this.searchTerm.length > 0) ? (tag.name.indexOf(this.searchTerm) >= 0 || tag.description.indexOf(this.searchTerm) >= 0) : true);
+      });
+    } else {
+      this.filteredPlugins = this.pluginsList.filter(tag => {
+          return tag.name.indexOf(this.searchTerm) >= 0 || tag.description.indexOf(this.searchTerm) >= 0;
+      });
+    }
+  }
 
-    this.filteredPlugins = this.pluginsList.filter(tag => {
-        return tag.name.indexOf(this.searchTerm) >= 0 || tag.description.indexOf(this.searchTerm) >= 0;
-    }); 
+  filterByCat(event, category) {
+    event.preventDefault();
+
+    this.filter = category;
+
+    this.search();
   }
 }
