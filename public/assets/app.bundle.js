@@ -9,7 +9,7 @@ webpackJsonp([0],[
 "use strict";
 
 var root_1 = __webpack_require__(14);
-var toSubscriber_1 = __webpack_require__(153);
+var toSubscriber_1 = __webpack_require__(156);
 var observable_1 = __webpack_require__(62);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -356,9 +356,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵx", function() { return DebugContext; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__);
@@ -19341,9 +19341,9 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('4.1.2'
 var isArray_1 = __webpack_require__(64);
 var isObject_1 = __webpack_require__(66);
 var isFunction_1 = __webpack_require__(65);
-var tryCatch_1 = __webpack_require__(154);
+var tryCatch_1 = __webpack_require__(157);
 var errorObject_1 = __webpack_require__(63);
-var UnsubscriptionError_1 = __webpack_require__(150);
+var UnsubscriptionError_1 = __webpack_require__(153);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -19561,8 +19561,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(4);
 var Subscriber_1 = __webpack_require__(13);
 var Subscription_1 = __webpack_require__(26);
-var ObjectUnsubscribedError_1 = __webpack_require__(149);
-var SubjectSubscription_1 = __webpack_require__(134);
+var ObjectUnsubscribedError_1 = __webpack_require__(152);
+var SubjectSubscription_1 = __webpack_require__(137);
 var rxSubscriber_1 = __webpack_require__(44);
 /**
  * @class SubjectSubscriber<T>
@@ -24014,12 +24014,12 @@ exports.isScheduler = isScheduler;
 "use strict";
 
 var root_1 = __webpack_require__(14);
-var isArrayLike_1 = __webpack_require__(151);
-var isPromise_1 = __webpack_require__(152);
+var isArrayLike_1 = __webpack_require__(154);
+var isPromise_1 = __webpack_require__(155);
 var isObject_1 = __webpack_require__(66);
 var Observable_1 = __webpack_require__(4);
-var iterator_1 = __webpack_require__(148);
-var InnerSubscriber_1 = __webpack_require__(133);
+var iterator_1 = __webpack_require__(151);
+var InnerSubscriber_1 = __webpack_require__(136);
 var observable_1 = __webpack_require__(62);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -51031,11 +51031,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵw", function() { return PATTERN_VALIDATOR; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵr", function() { return REQUIRED_VALIDATOR; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(20);
 var __extends = (this && this.__extends) || function (d, b) {
@@ -59276,20 +59276,42 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
+__webpack_require__(132);
+__webpack_require__(131);
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app works!';
+        this.categories = [
+            { title: "File Type", tag: "filetype" },
+            { title: "Component & Template", tag: "component-template" },
+            { title: "Styles", tag: "styles" },
+            { title: "Language & Framework", tag: "language-framework" },
+            { title: "Utility", tag: "utility" },
+            { title: "Testing", tag: "testing" }
+        ];
+        this.pluginsList = __webpack_require__(158);
+        this.filteredPlugins = this.pluginsList;
     }
+    AppComponent.prototype.search = function () {
+        var _this = this;
+        console.log(this.searchTerm);
+        this.filteredPlugins = this.pluginsList.filter(function (tag) {
+            return tag.name.indexOf(_this.searchTerm) >= 0 || tag.description.indexOf(_this.searchTerm) >= 0;
+        });
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
-        template: __webpack_require__(131),
-        styles: [__webpack_require__(156)]
-    })
+        template: __webpack_require__(133),
+        styles: [__webpack_require__(135)]
+    }),
+    __metadata("design:paramtypes", [])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 
@@ -59366,11 +59388,29 @@ platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1
 /* 131 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\n  {{title}}\n</h1>\n";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 132 */,
+/* 132 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 133 */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"header\">\n  <nav class=\"navbar navbar-default\">\n    <div class=\"container-fluid\">\n      <!-- Brand and toggle get grouped for better mobile display -->\n      <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n        </button>\n        <a class=\"navbar-brand\" href=\"#\">\n          <img src=\"/assets/img/precious_dev.png\" width=\"25\" style=\"float: left; margin-right: 10px; margin-top: -2px; opacity: 0.7;\" />\n          Precious Dev\n        </a>\n      </div>\n\n      <!-- Collect the nav links, forms, and other content for toggling -->\n      <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n        <ul class=\"nav navbar-nav navbar-right\">\n          <li><a href=\"#\">Add Plugin</a></li>\n        </ul>\n      </div><!-- /.navbar-collapse -->\n    </div><!-- /.container-fluid -->\n  </nav>\n\n  <div class=\"container center-text\" id=\"header-hero\" (click)=\"searchTerm = ''\">\n    <a href=\"#\" (click)=\"$event.preventDefault();\">\n      <h1>Webpack.land 💯</h1>\n      <h2>A repository of great webpack plugins</h2>\n    </a>\n  </div>\n</div>\n\n<div class=\"container center blocks\">\n  <div class=\"form-group row\">\n    <div class=\"inner-addon left-addon\">\n        <i class=\"icon ion-ios-search\"></i>\n        <input type=\"text\" class=\"form-control\" placeholder=\"Search...\" [(ngModel)]=\"searchTerm\" (ngModelChange)=\"search();\">\n    </div>\n  </div>\n\n  <div class=\"row\" *ngIf=\"searchTerm && searchTerm.length > 0\">\n    <a [href]=\"plugin.url\" target=\"_blank\" class=\"link-row\" *ngFor=\"let plugin of filteredPlugins;\">\n      <strong>{{plugin.name}}</strong>\n      \n      <span>{{plugin.description}}</span>\n    </a>\n  </div>\n\n  <div class=\"row center-text\" *ngIf=\"searchTerm === undefined || searchTerm.length === 0\">\n    <a href=\"#\" *ngFor=\"let category of categories;\">\n      <div class=\"block col-md-3 col-sm-6\">\n        <div class=\"block-content\">\n            {{category.title}}\n        </div>\n      </div>\n    </a>\n  </div>\n</div>\n\n<div id=\"footer\" class=\"center-text\">\n  <a href=\"https://cycle.io\" target=\"_blank\">\n      Proudly Hosted on <img src=\"/assets/img/cycle.svg\" />\n  </a>\n</div>";
+
+/***/ }),
+/* 134 */,
+/* 135 */
+/***/ (function(module, exports) {
+
+module.exports = "div#header-hero a {\n  text-decoration: none;\n  color: #000; }\n  div#header-hero a:hover {\n    color: #000 !important; }\n\ndiv.blocks {\n  margin-bottom: 30px;\n  background: #fff;\n  -webkit-border-radius: 0.28571rem;\n  -moz-border-radius: 0.28571rem;\n  border-radius: 0.28571rem;\n  -moz-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);\n  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }\n  div.blocks input {\n    border: none;\n    padding: 25px;\n    padding-left: 35px;\n    font-size: 21px;\n    border-bottom: 1px solid #ececec;\n    -webkit-border-top-left-radius: 0.28571rem;\n    -webkit-border-top-right-radius: 0.28571rem;\n    -webkit-border-bottom-right-radius: 0;\n    -webkit-border-bottom-left-radius: 0;\n    -moz-border-radius-topleft: 0.28571rem;\n    -moz-border-radius-topright: 0.28571rem;\n    -moz-border-radius-bottomright: 0;\n    -moz-border-radius-bottomleft: 0;\n    border-top-left-radius: 0.28571rem;\n    border-top-right-radius: 0.28571rem;\n    border-bottom-right-radius: 0;\n    border-bottom-left-radius: 0; }\n    div.blocks input:focus {\n      -moz-box-shadow: none;\n      -webkit-box-shadow: none;\n      box-shadow: none; }\n  div.blocks a {\n    color: #000; }\n    div.blocks a.link-row {\n      display: block;\n      width: 100%;\n      padding: 15px;\n      border-bottom: 1px solid #ececec; }\n      div.blocks a.link-row:hover {\n        cursor: pointer;\n        text-decoration: none;\n        background: #f9f9f9; }\n      div.blocks a.link-row strong {\n        font-size: 30px;\n        font-weight: 700; }\n      div.blocks a.link-row span {\n        font-size: 19px;\n        margin-left: 15px; }\n  div.blocks div.form-group {\n    margin-bottom: 0; }\n  div.blocks div.block {\n    position: relative;\n    background: #fff;\n    border-bottom: 1px solid #ececec;\n    border-right: 1px solid #ececec;\n    transition: all .3s; }\n    div.blocks div.block:nth-child(4) {\n      border-right: 3px solid red; }\n    div.blocks div.block:before {\n      content: \"\";\n      display: block;\n      padding-top: 100%; }\n    div.blocks div.block:hover {\n      border: 2px solid #2086d7;\n      border-radius: 4px;\n      -moz-box-shadow: 0 8px 8px rgba(1, 67, 163, 0.24), 0 0 8px rgba(1, 67, 163, 0.12), 0 6px 18px rgba(43, 133, 231, 0.12);\n      -webkit-box-shadow: 0 8px 8px rgba(1, 67, 163, 0.24), 0 0 8px rgba(1, 67, 163, 0.12), 0 6px 18px rgba(43, 133, 231, 0.12);\n      box-shadow: 0 8px 8px rgba(1, 67, 163, 0.24), 0 0 8px rgba(1, 67, 163, 0.12), 0 6px 18px rgba(43, 133, 231, 0.12);\n      -webkit-transform: scale(1.025);\n      -khtml-transform: scale(1.025);\n      -moz-transform: scale(1.025);\n      -ms-transform: scale(1.025);\n      -o-transform: scale(1.025);\n      transform: scale(1.025);\n      z-index: 10;\n      transition: all .15s; }\n  div.blocks div.block-content {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    -khtml-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    font-size: 27px;\n    font-weight: 700; }\n\n/* enable absolute positioning */\n.inner-addon {\n  position: relative; }\n\n/* style icon */\n.inner-addon .icon {\n  position: absolute;\n  padding: 12px;\n  font-size: 20px;\n  opacity: 0.5;\n  pointer-events: none; }\n\n/* align icon */\n.left-addon .icon {\n  left: 0px; }\n\n.right-addon .icon {\n  right: 0px; }\n\n/* add padding  */\n.left-addon input {\n  padding-left: 30px; }\n\n.right-addon input {\n  padding-right: 30px; }\n"
+
+/***/ }),
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59412,7 +59452,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59458,7 +59498,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59469,7 +59509,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(4);
-var ScalarObservable_1 = __webpack_require__(139);
+var ScalarObservable_1 = __webpack_require__(142);
 var EmptyObservable_1 = __webpack_require__(61);
 var isScheduler_1 = __webpack_require__(67);
 /**
@@ -59586,7 +59626,7 @@ exports.ArrayObservable = ArrayObservable;
 //# sourceMappingURL=ArrayObservable.js.map
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59761,7 +59801,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59879,7 +59919,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60006,7 +60046,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60070,37 +60110,37 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ForkJoinObservable_1 = __webpack_require__(137);
+var ForkJoinObservable_1 = __webpack_require__(140);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(138);
+var PromiseObservable_1 = __webpack_require__(141);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var merge_1 = __webpack_require__(144);
+var merge_1 = __webpack_require__(147);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60193,14 +60233,14 @@ var MapSubscriber = (function (_super) {
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(4);
-var ArrayObservable_1 = __webpack_require__(135);
-var mergeAll_1 = __webpack_require__(145);
+var ArrayObservable_1 = __webpack_require__(138);
+var mergeAll_1 = __webpack_require__(148);
 var isScheduler_1 = __webpack_require__(67);
 /* tslint:enable:max-line-length */
 /**
@@ -60344,7 +60384,7 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60461,12 +60501,12 @@ exports.MergeAllSubscriber = MergeAllSubscriber;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(136);
+var ConnectableObservable_1 = __webpack_require__(139);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -60524,12 +60564,12 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(146);
+var multicast_1 = __webpack_require__(149);
 var Subject_1 = __webpack_require__(43);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -60554,7 +60594,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60598,7 +60638,7 @@ exports.$$iterator = exports.iterator;
 //# sourceMappingURL=iterator.js.map
 
 /***/ }),
-/* 149 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60631,7 +60671,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ }),
-/* 150 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60662,7 +60702,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60671,7 +60711,7 @@ exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; 
 //# sourceMappingURL=isArrayLike.js.map
 
 /***/ }),
-/* 152 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60683,7 +60723,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ }),
-/* 153 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60709,7 +60749,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ }),
-/* 154 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60734,11 +60774,461 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ }),
-/* 155 */,
-/* 156 */
+/* 158 */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = [
+	{
+		"name": "img-loader",
+		"author": "thetalecrafter",
+		"url": "https://github.com/thetalecrafter/img-loader",
+		"description": "Image minimizing loader for webpack",
+		"stars": 67,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "svg-url-loader",
+		"author": "bhovhannes",
+		"url": "https://github.com/bhovhannes/svg-url-loader",
+		"description": "A webpack loader which loads SVG file as utf-8 encoded DataUrl string.",
+		"stars": 68,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "mermaid-loader",
+		"author": "popul",
+		"url": "https://github.com/popul/mermaid-loader",
+		"description": "mermaid loader for webpack",
+		"stars": 2,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "angular2-template-loader",
+		"author": "TheLarkInn",
+		"url": "https://github.com/TheLarkInn/angular2-template-loader",
+		"description": "Chain-to loader for webpack that inlines all html and style's in angular2 components. ",
+		"stars": 131,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "handlebars-loader",
+		"author": "pcardune",
+		"url": "https://github.com/pcardune/handlebars-loader",
+		"description": "A handlebars template loader for webpack",
+		"stars": 222,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "vue-loader",
+		"author": "vuejs",
+		"url": "https://github.com/vuejs/vue-loader",
+		"description": "Webpack loader for Vue.js components",
+		"stars": 1757,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "svg-react-loader",
+		"author": "jhamlet",
+		"url": "https://github.com/jhamlet/svg-react-loader",
+		"description": "Webpack SVG to React Component Loader",
+		"stars": 242,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "underscore-template-loader",
+		"author": "emaphp",
+		"url": "https://github.com/emaphp/underscore-template-loader",
+		"description": "A Underscore and Lodash template loader for Webpack",
+		"stars": 44,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "ng-inline-styles-loader",
+		"author": "seveves",
+		"url": "https://github.com/seveves/ng-inline-styles-loader",
+		"description": "A simple webpack loader for inlined stylesheets of angular components",
+		"stars": 2,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "markup-inline-loader",
+		"author": "asnowwolf",
+		"url": "https://github.com/asnowwolf/markup-inline-loader",
+		"description": "a webpack loader to embed svg/MathML to html",
+		"stars": 11,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "ngtemplate-loader",
+		"author": "WearyMonkey",
+		"url": "https://github.com/WearyMonkey/ngtemplate-loader",
+		"description": "Include AngularJS templates in the Webpack bundle and preload the template cache.",
+		"stars": 172,
+		"tags": [
+			"component-template"
+		]
+	},
+	{
+		"name": "postcss-loader",
+		"author": "postcss",
+		"url": "https://github.com/postcss/postcss-loader",
+		"description": "PostCSS loader for webpack",
+		"stars": 1207,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "isomorphic-style-loader",
+		"author": "kriasoft",
+		"url": "https://github.com/kriasoft/isomorphic-style-loader",
+		"description": "CSS style loader for Webpack that is optimized for isomorphic (universal) web apps",
+		"stars": 589,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "stylus-loader",
+		"author": "shama",
+		"url": "https://github.com/shama/stylus-loader",
+		"description": ":art: A stylus loader for webpack.",
+		"stars": 248,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "ts-loader",
+		"author": "TypeStrong",
+		"url": "https://github.com/TypeStrong/ts-loader",
+		"description": "TypeScript loader for webpack",
+		"stars": 690,
+		"tags": [
+			"language-framework"
+		]
+	},
+	{
+		"name": "awesome-typescript-loader",
+		"author": "s-panferov",
+		"url": "https://github.com/s-panferov/awesome-typescript-loader",
+		"description": "Awesome TypeScript loader for webpack",
+		"stars": 806,
+		"tags": [
+			"language-framework"
+		]
+	},
+	{
+		"name": "bootstrap-loader",
+		"author": "shakacode",
+		"url": "https://github.com/shakacode/bootstrap-loader",
+		"description": "Load Bootstrap styles and scripts in your Webpack bundle",
+		"stars": 720,
+		"tags": [
+			"language-framework"
+		]
+	},
+	{
+		"name": "posthtml",
+		"author": "posthtml",
+		"url": "https://github.com/posthtml/posthtml",
+		"description": "PostHTML is a tool to transform HTML/XML with JS plugins. By http://theprotein.io team.",
+		"stars": 836,
+		"tags": [
+			"language-framework"
+		]
+	},
+	{
+		"name": "babel-loader",
+		"author": "babel",
+		"url": "https://github.com/babel/babel-loader",
+		"description": "Webpack plugin for Babel",
+		"stars": 1827,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "eslint-loader",
+		"author": "MoOx",
+		"url": "https://github.com/MoOx/eslint-loader",
+		"description": "eslint loader (for webpack)",
+		"stars": 483,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "jscs-loader",
+		"author": "unindented",
+		"url": "https://github.com/unindented/jscs-loader",
+		"description": "Run your source through the JSCS style checker.",
+		"stars": 21,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "resolve-url-loader",
+		"author": "bholloway",
+		"url": "https://github.com/bholloway/resolve-url-loader",
+		"description": "Webpack loader that resolves relative paths in url() statements based on the original source file",
+		"stars": 171,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "webpack-combine-loaders",
+		"author": "jsdf",
+		"url": "https://github.com/jsdf/webpack-combine-loaders",
+		"description": "Combine an array of webpack loaders into a loader string",
+		"stars": 96,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "modernizr-loader",
+		"author": "peerigon",
+		"url": "https://github.com/peerigon/modernizr-loader",
+		"description": "Get your modernizr build bundled with webpack",
+		"stars": 89,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "icons-loader",
+		"author": "mikevercoelen",
+		"url": "https://github.com/mikevercoelen/icons-loader",
+		"description": "Icons loader for webpack, generates iconfonts for webpack",
+		"stars": 20,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "ng-router-loader",
+		"author": "shlomiassaf",
+		"url": "https://github.com/shlomiassaf/ng-router-loader",
+		"description": "Webpack loader for NgModule lazy loading using the angular router",
+		"stars": 27,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "webpack-istanbul-plugin",
+		"author": "DxCx",
+		"url": "https://github.com/DxCx/webpack-istanbul-plugin",
+		"description": "Webpack plugin for Istanbul",
+		"stars": 2,
+		"tags": [
+			"testing"
+		]
+	},
+	{
+		"name": "html-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/html-loader",
+		"description": "html loader module for webpack",
+		"stars": 475,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "url-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/url-loader",
+		"description": "url loader module for webpack",
+		"stars": 476,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "file-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/file-loader",
+		"description": "file loader for webpack",
+		"stars": 701,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "raw-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/raw-loader",
+		"description": "raw loader module for webpack",
+		"stars": 232,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "json5-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/json5-loader",
+		"description": "JSON5 loader for Webpack",
+		"stars": 34,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "json-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/json-loader",
+		"description": "json loader module for webpack",
+		"stars": 301,
+		"tags": [
+			"filetype"
+		]
+	},
+	{
+		"name": "sass-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/sass-loader",
+		"description": "Sass loader for webpack. Compiles Sass to CSS.",
+		"stars": 1563,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "less-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/less-loader",
+		"description": "Less loader for webpack. Compiles Less to CSS. ",
+		"stars": 375,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "coffee-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/coffee-loader",
+		"description": "coffee loader module for webpack",
+		"stars": 81,
+		"tags": [
+			"language-framework"
+		]
+	},
+	{
+		"name": "css-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/css-loader",
+		"description": "css loader module for webpack",
+		"stars": 1787,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "style-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/style-loader",
+		"description": "style loader module for webpack",
+		"stars": 614,
+		"tags": [
+			"styles"
+		]
+	},
+	{
+		"name": "jshint-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/jshint-loader",
+		"description": "jshint loader for webpack",
+		"stars": 45,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "source-map-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/source-map-loader",
+		"description": "extract sourceMappingURL comments from modules and offer it to webpack",
+		"stars": 98,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "bundle-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/bundle-loader",
+		"description": "bundle loader for webpack",
+		"stars": 327,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "imports-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/imports-loader",
+		"description": "imports loader module for webpack",
+		"stars": 300,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "mocha-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/mocha-loader",
+		"description": "mocha loader module for webpack",
+		"stars": 109,
+		"tags": [
+			"testing"
+		]
+	},
+	{
+		"name": "worker-loader",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/worker-loader",
+		"description": "worker loader module for webpack",
+		"stars": 239,
+		"tags": [
+			"utility"
+		]
+	},
+	{
+		"name": "karma-webpack",
+		"author": "webpack-contrib",
+		"url": "https://github.com/webpack-contrib/karma-webpack",
+		"description": "Use webpack with karma.",
+		"stars": 577,
+		"tags": [
+			"testing"
+		]
+	}
+];
 
 /***/ })
 ],[79]);

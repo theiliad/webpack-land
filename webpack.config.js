@@ -9,7 +9,7 @@ var config = {
     'polyfills': './src/polyfills.ts'
   },
   resolve: {
-    extensions: ['.js', '.ts']
+    extensions: ['.js', '.ts', '.scss']
   },
   module:{
       loaders:[{
@@ -19,7 +19,15 @@ var config = {
             test: /\.html$/,
             loader: 'html-loader'
         }, {
-            test: /.scss$/,
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract({
+                        fallback: "style-loader",
+                        use: [
+                            { loader: 'css-loader', query: { modules: false, sourceMaps: false, minimize: true } }
+                        ]
+                    })
+        }, {
+            test: /\.scss$/,
             exclude: path.resolve('src/app'),
             loader: ExtractTextPlugin.extract({
                         fallback: "style-loader",
@@ -29,7 +37,7 @@ var config = {
                         ]
                     })
         }, {
-            test: /.scss$/,
+            test: /\.scss$/,
             include: path.resolve('src/app'),
             loader: 'raw-loader!sass-loader'
         }, {

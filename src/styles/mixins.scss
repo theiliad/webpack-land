@@ -1,0 +1,61 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin border-radius($radii) {
+    -webkit-border-radius:  $radii;
+    -moz-border-radius:     $radii;
+    border-radius:          $radii;
+}
+
+@mixin border-radius-separate($topLeftRadius, $topRightRadius, $bottomLeftRadius, $bottomRightRadius) {
+  -webkit-border-top-left-radius:     $topLeftRadius;
+  -webkit-border-top-right-radius:    $topRightRadius;
+  -webkit-border-bottom-right-radius: $bottomRightRadius;
+  -webkit-border-bottom-left-radius:  $bottomLeftRadius;
+
+  -moz-border-radius-topleft:     $topLeftRadius;
+  -moz-border-radius-topright:    $topRightRadius;
+  -moz-border-radius-bottomright: $bottomRightRadius;
+  -moz-border-radius-bottomleft:  $bottomLeftRadius;
+
+  border-top-left-radius:     $topLeftRadius;
+  border-top-right-radius:    $topRightRadius;
+  border-bottom-right-radius: $bottomRightRadius;
+  border-bottom-left-radius:  $bottomLeftRadius;
+}
+
+@mixin box-shadow($shadow...) {
+    $shadows: '';
+
+    @for $i from 1 through length($shadow) {
+        $shadows: #{$shadows + nth($shadow, $i)};
+
+        @if $i < length($shadow) {
+            $shadows: #{$shadows + ", "};
+        }
+    }
+
+    -moz-box-shadow:    $shadows;
+    -webkit-box-shadow: $shadows;
+    box-shadow:         $shadows;
+}
+
+@mixin transform($transform...) {
+    $transforms: '';
+
+    @for $i from 1 through length($transform) {
+        $transforms: #{$transforms + nth($transform, $i)};
+
+        @if $i < length($transform) {
+            $transforms: #{$transforms + " "};
+        }
+    }
+
+    @include css3-prefix("transform", $transforms);
+}

@@ -1,0 +1,452 @@
+[
+   {
+      "name":"img-loader",
+      "author":"thetalecrafter",
+      "url":"https://github.com/thetalecrafter/img-loader",
+      "description":"Image minimizing loader for webpack",
+      "stars":67,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"svg-url-loader",
+      "author":"bhovhannes",
+      "url":"https://github.com/bhovhannes/svg-url-loader",
+      "description":"A webpack loader which loads SVG file as utf-8 encoded DataUrl string.",
+      "stars":68,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"mermaid-loader",
+      "author":"popul",
+      "url":"https://github.com/popul/mermaid-loader",
+      "description":"mermaid loader for webpack",
+      "stars":2,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"angular2-template-loader",
+      "author":"TheLarkInn",
+      "url":"https://github.com/TheLarkInn/angular2-template-loader",
+      "description":"Chain-to loader for webpack that inlines all html and style's in angular2 components. ",
+      "stars":131,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"handlebars-loader",
+      "author":"pcardune",
+      "url":"https://github.com/pcardune/handlebars-loader",
+      "description":"A handlebars template loader for webpack",
+      "stars":222,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"vue-loader",
+      "author":"vuejs",
+      "url":"https://github.com/vuejs/vue-loader",
+      "description":"Webpack loader for Vue.js components",
+      "stars":1757,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"svg-react-loader",
+      "author":"jhamlet",
+      "url":"https://github.com/jhamlet/svg-react-loader",
+      "description":"Webpack SVG to React Component Loader",
+      "stars":242,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"underscore-template-loader",
+      "author":"emaphp",
+      "url":"https://github.com/emaphp/underscore-template-loader",
+      "description":"A Underscore and Lodash template loader for Webpack",
+      "stars":44,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"ng-inline-styles-loader",
+      "author":"seveves",
+      "url":"https://github.com/seveves/ng-inline-styles-loader",
+      "description":"A simple webpack loader for inlined stylesheets of angular components",
+      "stars":2,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"markup-inline-loader",
+      "author":"asnowwolf",
+      "url":"https://github.com/asnowwolf/markup-inline-loader",
+      "description":"a webpack loader to embed svg/MathML to html",
+      "stars":11,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"ngtemplate-loader",
+      "author":"WearyMonkey",
+      "url":"https://github.com/WearyMonkey/ngtemplate-loader",
+      "description":"Include AngularJS templates in the Webpack bundle and preload the template cache.",
+      "stars":172,
+      "tags":[
+         "component-template"
+      ]
+   },
+   {
+      "name":"postcss-loader",
+      "author":"postcss",
+      "url":"https://github.com/postcss/postcss-loader",
+      "description":"PostCSS loader for webpack",
+      "stars":1207,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"isomorphic-style-loader",
+      "author":"kriasoft",
+      "url":"https://github.com/kriasoft/isomorphic-style-loader",
+      "description":"CSS style loader for Webpack that is optimized for isomorphic (universal) web apps",
+      "stars":589,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"stylus-loader",
+      "author":"shama",
+      "url":"https://github.com/shama/stylus-loader",
+      "description":":art: A stylus loader for webpack.",
+      "stars":248,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"ts-loader",
+      "author":"TypeStrong",
+      "url":"https://github.com/TypeStrong/ts-loader",
+      "description":"TypeScript loader for webpack",
+      "stars":690,
+      "tags":[
+         "language-framework"
+      ]
+   },
+   {
+      "name":"awesome-typescript-loader",
+      "author":"s-panferov",
+      "url":"https://github.com/s-panferov/awesome-typescript-loader",
+      "description":"Awesome TypeScript loader for webpack",
+      "stars":806,
+      "tags":[
+         "language-framework"
+      ]
+   },
+   {
+      "name":"bootstrap-loader",
+      "author":"shakacode",
+      "url":"https://github.com/shakacode/bootstrap-loader",
+      "description":"Load Bootstrap styles and scripts in your Webpack bundle",
+      "stars":720,
+      "tags":[
+         "language-framework"
+      ]
+   },
+   {
+      "name":"posthtml",
+      "author":"posthtml",
+      "url":"https://github.com/posthtml/posthtml",
+      "description":"PostHTML is a tool to transform HTML/XML with JS plugins. By http://theprotein.io team.",
+      "stars":836,
+      "tags":[
+         "language-framework"
+      ]
+   },
+   {
+      "name":"babel-loader",
+      "author":"babel",
+      "url":"https://github.com/babel/babel-loader",
+      "description":"Webpack plugin for Babel",
+      "stars":1827,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"eslint-loader",
+      "author":"MoOx",
+      "url":"https://github.com/MoOx/eslint-loader",
+      "description":"eslint loader (for webpack)",
+      "stars":483,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"jscs-loader",
+      "author":"unindented",
+      "url":"https://github.com/unindented/jscs-loader",
+      "description":"Run your source through the JSCS style checker.",
+      "stars":21,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"resolve-url-loader",
+      "author":"bholloway",
+      "url":"https://github.com/bholloway/resolve-url-loader",
+      "description":"Webpack loader that resolves relative paths in url() statements based on the original source file",
+      "stars":171,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"webpack-combine-loaders",
+      "author":"jsdf",
+      "url":"https://github.com/jsdf/webpack-combine-loaders",
+      "description":"Combine an array of webpack loaders into a loader string",
+      "stars":96,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"modernizr-loader",
+      "author":"peerigon",
+      "url":"https://github.com/peerigon/modernizr-loader",
+      "description":"Get your modernizr build bundled with webpack",
+      "stars":89,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"icons-loader",
+      "author":"mikevercoelen",
+      "url":"https://github.com/mikevercoelen/icons-loader",
+      "description":"Icons loader for webpack, generates iconfonts for webpack",
+      "stars":20,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"ng-router-loader",
+      "author":"shlomiassaf",
+      "url":"https://github.com/shlomiassaf/ng-router-loader",
+      "description":"Webpack loader for NgModule lazy loading using the angular router",
+      "stars":27,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"webpack-istanbul-plugin",
+      "author":"DxCx",
+      "url":"https://github.com/DxCx/webpack-istanbul-plugin",
+      "description":"Webpack plugin for Istanbul",
+      "stars":2,
+      "tags":[
+         "testing"
+      ]
+   },
+   {
+      "name":"html-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/html-loader",
+      "description":"html loader module for webpack",
+      "stars":475,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"url-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/url-loader",
+      "description":"url loader module for webpack",
+      "stars":476,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"file-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/file-loader",
+      "description":"file loader for webpack",
+      "stars":701,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"raw-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/raw-loader",
+      "description":"raw loader module for webpack",
+      "stars":232,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"json5-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/json5-loader",
+      "description":"JSON5 loader for Webpack",
+      "stars":34,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"json-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/json-loader",
+      "description":"json loader module for webpack",
+      "stars":301,
+      "tags":[
+         "filetype"
+      ]
+   },
+   {
+      "name":"sass-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/sass-loader",
+      "description":"Sass loader for webpack. Compiles Sass to CSS.",
+      "stars":1563,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"less-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/less-loader",
+      "description":"Less loader for webpack. Compiles Less to CSS. ",
+      "stars":375,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"coffee-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/coffee-loader",
+      "description":"coffee loader module for webpack",
+      "stars":81,
+      "tags":[
+         "language-framework"
+      ]
+   },
+   {
+      "name":"css-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/css-loader",
+      "description":"css loader module for webpack",
+      "stars":1787,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"style-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/style-loader",
+      "description":"style loader module for webpack",
+      "stars":614,
+      "tags":[
+         "styles"
+      ]
+   },
+   {
+      "name":"jshint-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/jshint-loader",
+      "description":"jshint loader for webpack",
+      "stars":45,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"source-map-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/source-map-loader",
+      "description":"extract sourceMappingURL comments from modules and offer it to webpack",
+      "stars":98,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"bundle-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/bundle-loader",
+      "description":"bundle loader for webpack",
+      "stars":327,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"imports-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/imports-loader",
+      "description":"imports loader module for webpack",
+      "stars":300,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"mocha-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/mocha-loader",
+      "description":"mocha loader module for webpack",
+      "stars":109,
+      "tags":[
+         "testing"
+      ]
+   },
+   {
+      "name":"worker-loader",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/worker-loader",
+      "description":"worker loader module for webpack",
+      "stars":239,
+      "tags":[
+         "utility"
+      ]
+   },
+   {
+      "name":"karma-webpack",
+      "author":"webpack-contrib",
+      "url":"https://github.com/webpack-contrib/karma-webpack",
+      "description":"Use webpack with karma.",
+      "stars":577,
+      "tags":[
+         "testing"
+      ]
+   }
+]
