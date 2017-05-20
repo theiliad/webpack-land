@@ -1,7 +1,30 @@
-var webPack = require('webpack');
+var webpack = require('webpack');
 var htmlWebPack = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
+var WebpackStrip = require('webpack-strip');
+
+// Setup variables based on Environment
+var tsLoaders = ['awesome-typescript-loader', 'angular-router-loader', 'angular2-template-loader'];
+var pluginsArray = [
+    new webpack.optimize.CommonsChunkPlugin({
+            name: ['app', 'polyfills']
+    }),
+
+    new ExtractTextPlugin("[name].css")
+];
+
+if (process.env.ENV === 'prod') {
+    tsLoaders.unshift(WebpackStrip.loader('console.log'));
+
+    pluginsArray.push(new webpack.optimize.UglifyJsPlugin({
+                            compress: {
+                                warnings: false,
+                            },
+                            sourceMap: false,
+                            comments: false
+                          }));
+}
 
 var config = {
   entry:{
@@ -14,7 +37,7 @@ var config = {
   module:{
       loaders:[{
             test:/\.ts$/,
-            loaders:['awesome-typescript-loader', 'angular-router-loader', 'angular2-template-loader']
+            loaders: tsLoaders
         }, {
             test: /\.html$/,
             loader: 'html-loader'
@@ -57,13 +80,7 @@ var config = {
         }
       ]
   },
- plugins: [
-    new webPack.optimize.CommonsChunkPlugin({
-           name: ['app', 'polyfills']
-    }),
-
-    new ExtractTextPlugin("[name].css")
-  ],
+  plugins: pluginsArray,
   output: {
     path: path.resolve('public/assets'),
     filename: "[name].bundle.js",
